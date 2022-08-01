@@ -34,3 +34,19 @@ const filterSciFi = () => {
 const buttonSciFi = document.getElementsByClassName("filterSciFi")[0]
 
 buttonSciFi.addEventListener("click", filterSciFi)
+
+
+const filterInput = (event) => {
+    event.preventDefault()
+    
+    const inputValor = document.querySelector("#inputValue").value
+
+    const filtrados = filmes.filter((filme) => {
+        return filme.categoria.toLowerCase() === inputValor.toLowerCase() || filme.nome.toLowerCase() === inputValor.toLowerCase()
+    })
+    mostrarCards(filtrados)
+    
+}
+
+const btn = document.querySelector("#btnSearch")
+btn.addEventListener("click", filterInput)
