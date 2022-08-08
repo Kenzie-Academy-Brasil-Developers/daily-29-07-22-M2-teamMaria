@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css"/>
     <link rel="stylesheet" href="./src/css/style.css"/>
     <title>Aula Eventos</title>
 </head>
 <body>
-
-    <section id="filtros">
-        <button class="buttonFilter filterTodos">Todos</button>
-        <button class="buttonFilter filterSciFi">Sci-fi</button>
-    </section>
-    <ul class="containerFilmes">
-
-    </ul>
-
-    <form>
-        <input id="inputValue" placeholder="categoria">
-        <button type="submit" id="btnSearch">Pesquisar</button>
-    </form>
+    <main>
+        <section id="filtros">
+            <div>
+                <button class="buttonFilter filterTodos">Todos</button>
+                <button class="buttonFilter filterSciFi">Sci-fi</button>
+                <button class="buttonFilter filterFantasia">Fantasia</button>
+                <button class="buttonFilter">Musical</button>
+                <button class="buttonFilter">Terror</button>
+                <button class="buttonFilter">Ação</button>
+            </div>
+            <form>
+                <input id="inputValue" placeholder="categoria">
+                <button type="submit" id="btnSearch">Pesquisar</button>
+            </form>
+        </section>
+        <ul class="containerFilmes">
+    
+        </ul>
+    
+    </main>
 
     <script src="./src/js/database.js"></script>
-    <script src="./src/js/script.js"></script>
+    <script src="./src/js/aula_metodos.js"></script>
 </body>
 </html>
