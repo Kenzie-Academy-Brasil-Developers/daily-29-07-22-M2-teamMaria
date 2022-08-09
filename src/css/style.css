@@ -52,3 +52,74 @@ main {
     font-size: 20px;
 }
 
+@media screen and (max-width:500px) {
+    main {
+        margin: 10px;
+        gap: 30px;
+    }
+
+    #filtros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filtros div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    #filtros div button {
+        margin-right: 0;
+        font-size: 15px;
+        width: 25%;
+        max-width: 120px;
+    }
+
+    .containerFilmes {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        margin: 10px;
+        gap: 30px;
+    }
+
+    #filtros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filtros div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    #filtros div button{
+        margin-right: 0;
+        font-size: 15px;
+        width: 25%;
+        max-width: 250px;
+    }
+
+    .containerFilmes{
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
