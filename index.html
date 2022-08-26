@@ -9,20 +9,23 @@
 </head>
 <body>
 
-    <section id="filtros">
-        <button class="buttonFilter filterTodos">Todos</button>
-        <button class="buttonFilter filterSciFi">Sci-fi</button>
-    </section>
-    <ul class="containerFilmes">
-
-    </ul>
-
-    <form>
-        <input id="inputValue" placeholder="categoria">
-        <button type="submit" id="btnSearch">Pesquisar</button>
+    <form id="formRegister">
+        <h3>Cadastro</h3>
+    
+        <input type="text" name="name" placeholder="Nome">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="password" placeholder="Senha">
+        <button type="submit" >Cadastrar</button>
     </form>
 
-    <script src="./src/js/database.js"></script>
-    <script src="./src/js/script.js"></script>
+    <form id="formLogin">
+        <h3>Login</h3>
+
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="password" placeholder="Senha">
+        <button type="submit">Entar</button>
+    </form>
+
+    <script type="module" src="./src/js/script.js"></script>
 </body>
 </html>
